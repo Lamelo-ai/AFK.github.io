@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <title>Menu du Restaurant</title>
+    <head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .categorie{
+            margin-bottom: 2em;
+        }
+        .plat {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5em 0;
+        }
+        .prix {
+            font-weight: bold;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 1em;
+        }
+        .formulaire {
+            margin-top: 2em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+    </head>
+    <header style="
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1em;
+">
+    <img src="logo.jpg" alt="Logo du restaurant" style="height: 80px;">
+</header>
+    <body style="
+background-image: url('fond2.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+">
+        <div class="menu">
+            <h1>Menu du Restaurant</h1>
+
+            <div class="categorie">
+                <h2>Plats</h2>
+                <div class="plat">
+                    <div><img src="poulet.jpg" alt="Poulet DG">Poulet DG</div>
+                    <span class="prix">5 000 FCFA</span>
+                </div>
+                <div class="plat">
+                    <div><img src="eru.jpg" alt="ERU">ERU</div>
+                    <span class="prix">3 000 FCFA</span>
+                </div>
+                <div class="plat">
+                    <div><img src="koki.jpg" alt="Koki">Koki</div>
+                    <span class="prix">3 500 FCFA</span>
+                </div>
+                <div class="plat">
+                    <div><img src="ndole.jpg" alt="Ndole">Ndole</div>
+                    <span class="prix">4 500 FCFA</span>
+                </div>
+                <div class="plat">
+                    <div><img src="porc.jpg" alt="Ndomba de porc">Ndomba de porc</div>
+                    <span class="prix">5 000 FCFA</span>
+                </div>           
+            </div>
+            <div class="formulaire">
+                <h2>Commander</h2>
+                <form>
+                    <label>Nom :</label>
+                    <input type="text" required>
+                    <label>Plat :</label>
+                    <select>
+                        <option>Poulet DG</option>
+                        <option>ERU</option>
+                        <option>Koki</option>
+                        <option>Ndole</option>
+                        <option>Ndomba de porc</option>
+                    </select>
+                    <label>Quantité :</label>
+                    <input type="number" required>
+                    <button>Commander</button>
+                </form>                
+            </div>
+        </div>
+    </body>
+    <footer style="
+    position: fixed;
+    width: 100%;
+    background-color: rgb(126, 182, 182);
+    text-align: left;
+    padding: 10px;
+    ">
+        <p>&copy; 2025 African Kitchen. Tous droits réservés.</p>
+        <h2>Contact</h2>
+        <p>&#128206; PK17, Douala</p>
+        <p>&#26007; +237 6 97 94 33 29/6 89 93 00 30/6 88 85 86 37/6 93 86 85 49</p>
+        <p>&#128231; letournedos@gmail.com</p>
+        <div class="reseaux">
+            <a href="https://instagram.com/COMPTE"> <img src="insta-icon.png" alt="instagram"></a>
+        </div>
+    </footer>
+</html>
