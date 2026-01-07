@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Réservations</title>
+    <script src="script.js" defer></script>
+</head>
+<header style="
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1em;
+">
+    <img src="logo.jpg" alt="Logo du restaurant" style="height: 80px;">
+</header>
+<body style="
+background-image: url('fond2.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+">
+ <h1>Comment commander ?</h1>
+ Indiquez les informations demandées puis valider tout simplement.
+ <form id="rdvForm">
+    <label>Nom :</label>
+    <div>
+        <select id="titre">
+            <option value="Mr">Mr</option>
+            <option value="Mme">Mme</option>
+        </select>
+        <input type="text" id="nom" placeholder="Votre nom" required>
+    </div>
+
+    <label>Date et heure</label>
+    <div>
+        <input type="date" id="date" required>
+        <input type="time" id="heure" required>
+    </div>
+
+    <button type="submit">Valider</button>
+    <a id="lienPdf" href="#" download="reçu.pdf" style="display: none;">Télécharger le reçu</a>
+ </form>
+</body>
+    <footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(126, 182, 182);
+    text-align: left;
+    padding: 10px;
+    ">
+        <p>&copy; 2025 African Kitchen. Tous droits réservés.</p>
+        <h2>Contact</h2>
+        <p>&#128206; PK17, Douala</p>
+        <p>&#26007; +237 6 97 94 33 29/6 89 93 00 30/6 88 85 86 37/6 93 86 85 49</p>
+        <p>&#128231; letournedos@gmail.com</p>
+        <div class="reseaux">
+            <a href="https://instagram.com/COMPTE"> <img src="insta-icon.png" alt="instagram"></a>
+        </div>
+    </footer>
+</html>
